@@ -1,0 +1,117 @@
+@font-face {
+    font-family: yield;
+    src: url(../fonts/yielding.ttf);
+ }
+:root{
+    --bg: #2b0d18;
+    --nav: #72203e;
+    --text: #ffe6eb;
+    --main-button:  #862e6b;
+
+}
+body {
+    font-family: yield;
+    color: var(--text) ;
+    background-color: var(--bg);
+
+}
+.navBar {
+    background-color: var(--nav);
+    border-radius: 20px; 
+    height: 50px;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.navCel {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: larger;
+    height:50px;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+.navCel:hover {
+    background-color: var(--main-button);
+    font-size: large;
+    padding: 10px 24px;
+    transition-duration: .25s;
+    transition-timing-function: ease-out;
+}
+
+.yieldThing{
+    font-size: 150px;
+    text-align: center;
+    -webkit-text-stroke-width: 20px;
+    -webkit-text-stroke-color: rgb(9, 2, 27);
+    position: absolute;
+    left: 42%;
+    top: 300px;
+    pointer-events: none;
+}
+.outline{
+    font-size: 150px;
+    text-align: center;
+
+    background: linear-gradient(#22d3f2, #1b397a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    left: 42%;
+    top: 300px;
+    pointer-events: none;
+}
+.img {
+    width: 105%;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    left: 0px
+}
+.bigYield{
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    animation: intro 5s ease-out forwards;
+    pointer-events: none;
+}
+.ness {
+animation: yield 1.5s ease-out 18.5s 1 forwards;
+}
+.bop {
+    animation: bop 342.8ms ease-in-out 0s infinite forwards;
+    }
+.star
+ {
+    animation: yield2 1s ease-out 13.5s 1 forwards;
+    }
+
+@keyframes yield {
+    from {opacity: 0; transform: scale(50%) translateX(1600px);}
+    to {opacity: 1;}
+  }
+  
+@keyframes yield2 {
+    from {opacity: 0; transform: scale(50%) translateX(-1600px);}
+    to {opacity: 1;}
+  }
+  @keyframes bop {
+    from {transform: translateY(40px) scale(99%);}
+    to {transform: translateY(0px);}
+  }
+  @keyframes intro {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--text) ;
+  }
